@@ -102,16 +102,19 @@ public class ServicoAluguel {
 Agora surge a necessidade de permitir que o cliente devolva o carro em qualquer local da rede. Em vez de modificar o código existente, criamos uma nova implementação da interface ValidadorDevolucao.
 Nova Implementação
 
-``public class ValidadorDevolucaoQualquerLocal implements ValidadorDevolucao {
+```
+public class ValidadorDevolucaoQualquerLocal implements ValidadorDevolucao {
     @Override
     public boolean validarDevolucao(Carro carro, LocalAluguel localOrigem, LocalAluguel localDevolucao) {
         return true; // Permite devolução em qualquer local
     }
-}``
+}
+``
 
-Alterando o Uso do Sistema
 
-```
+### Alterando o Uso do Sistema
+
+```java
 public class Main {
     public static void main(String[] args) {
         LocalAluguel localOrigem = new LocalAluguel("Locadora A");
