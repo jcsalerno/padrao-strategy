@@ -109,7 +109,7 @@ public class ValidadorDevolucaoQualquerLocal implements ValidadorDevolucao {
         return true; // Permite devolução em qualquer local
     }
 }
-``
+``` 
 
 
 ### Alterando o Uso do Sistema
@@ -129,7 +129,7 @@ public class Main {
         System.out.println("Pode devolver: " + podeDevolver);
     }
 }
-``
+``` 
 ## Por que o Strategy?
 
 O padrão **Strategy** foi escolhido porque:
